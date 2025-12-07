@@ -14,11 +14,22 @@ header {
   border-bottom: 2px solid #c8e6c9;
 }
 
+#mainTitle {
+  font-size: 40px;         
+  color: #388e3c;          
+  text-transform: uppercase; 
+  letter-spacing: 2px;       
+}
+
+
+
 header h1 {
   font-size: 34px;
   font-weight: 600;
   color: #2a2a2a;
 }
+
+
 
 /* Зображення */
 .images {
