@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ===== Helpers =====
 
 // Завантаження з localStorage
 function loadTasks() {
