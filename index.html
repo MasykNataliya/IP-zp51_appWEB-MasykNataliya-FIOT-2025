@@ -8,111 +8,113 @@
 <body>
   <!-- Шапка -->
   <header>
-   <h1 id="mainTitle">Графік навчання та роботи</h1>
+    <h1 id="mainTitle">Графік навчання та роботи</h1>
   </header>
 
-  <!-- Зображення -->
-  <section class="images">
-    <img src="study.jpg" alt="Навчання" />
-    <img src="calendar.jpg" alt="Календар" />
-    <img src="work.jpg" alt="Робота" />
-  </section>
+  <!-- Основний контент -->
+  <main>
+    <!-- Зображення -->
+    <section class="images">
+      <img src="study.jpg" alt="Навчання" />
+      <img src="calendar.jpg" alt="Календар" />
+      <img src="work.jpg" alt="Робота" />
+    </section>
 
-  <!-- Таблиця -->
-  <section class="schedule">
-    <h2>Розклад завдань</h2>
-    <table id="tasksTable">
-      <thead>
-        <tr>
-          <th>Дата</th>
-          <th>Завдання</th>
-          <th>Тип</th>
-          <th>Статус</th>
-          <th>Дія</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="date" value="2025-12-01"></td>
-          <td>Підготувати звіт з лабораторної</td>
-          <td>Навчання</td>
-          <td>
-            <select>
-              <option>Заплановано</option>
-              <option>В процесі</option>
-              <option>Виконано</option>
-            </select>
-          </td>
-          <td><button class="delete-btn">Видалити</button></td>
-        </tr>
-        <tr>
-          <td><input type="date" value="2025-12-02"></td>
-          <td>Розробити макет сайту</td>
-          <td>Робота</td>
-          <td>
-            <select>
-              <option>Заплановано</option>
-              <option>В процесі</option>
-              <option>Виконано</option>
-            </select>
-          </td>
-          <td><button class="delete-btn">Видалити</button></td>
-        </tr>
-        <tr>
-          <td><input type="date" value="2025-12-03"></td>
-          <td>Презентація проекту</td>
-          <td>Навчання</td>
-          <td>
-            <select>
-              <option>Заплановано</option>
-              <option>В процесі</option>
-              <option>Виконано</option>
-            </select>
-          </td>
-          <td><button class="delete-btn">Видалити</button></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <!-- Таблиця -->
+    <section class="schedule">
+      <h2>Розклад завдань</h2>
+      <table id="tasksTable">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Завдання</th>
+            <th>Тип</th>
+            <th>Статус</th>
+            <th>Дія</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="date" value="2025-12-01"></td>
+            <td>Підготувати звіт з лабораторної</td>
+            <td>Навчання</td>
+            <td>
+              <select>
+                <option>Заплановано</option>
+                <option>В процесі</option>
+                <option>Виконано</option>
+              </select>
+            </td>
+            <td><button class="delete-btn">Видалити</button></td>
+          </tr>
+          <tr>
+            <td><input type="date" value="2025-12-02"></td>
+            <td>Розробити макет сайту</td>
+            <td>Робота</td>
+            <td>
+              <select>
+                <option>Заплановано</option>
+                <option>В процесі</option>
+                <option>Виконано</option>
+              </select>
+            </td>
+            <td><button class="delete-btn">Видалити</button></td>
+          </tr>
+          <tr>
+            <td><input type="date" value="2025-12-03"></td>
+            <td>Презентація проекту</td>
+            <td>Навчання</td>
+            <td>
+              <select>
+                <option>Заплановано</option>
+                <option>В процесі</option>
+                <option>Виконано</option>
+              </select>
+            </td>
+            <td><button class="delete-btn">Видалити</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <!-- Форма -->
-  <section class="form-section">
-  <form id="taskForm">
-    <label for="date">Дата:</label>
-    <input type="date" id="date" name="date" required>
+    <!-- Форма -->
+    <section class="form-section">
+      <form id="taskForm">
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required>
 
-    <label for="task">Завдання:</label>
-    <input type="text" id="task" name="task" required>
+        <label for="task">Завдання:</label>
+        <input type="text" id="task" name="task" required>
 
-    <label for="type">Тип:</label>
-    <select id="type" name="type">
-      <option value="Навчання">Навчання</option>
-      <option value="Робота">Робота</option>
-    </select>
+        <label for="type">Тип:</label>
+        <select id="type" name="type">
+          <option value="Навчання">Навчання</option>
+          <option value="Робота">Робота</option>
+        </select>
 
-    <label for="status">Статус:</label>
-    <select id="status" name="status">
-      <option value="Заплановано">Заплановано</option>
-      <option value="В процесі">В процесі</option>
-      <option value="Виконано">Виконано</option>
-    </select>
+        <label for="status">Статус:</label>
+        <select id="status" name="status">
+          <option value="Заплановано">Заплановано</option>
+          <option value="В процесі">В процесі</option>
+          <option value="Виконано">Виконано</option>
+        </select>
 
-    <button type="submit">Додати</button>
-  </form>
+        <button type="submit">Додати</button>
+      </form>
 
-  <!-- Поради -->
-  <div class="hints">
-    <h2>Як користуватися сайтом</h2>
-    <ol>
-      <li>Переглянь список завдань у таблиці «Графік завдань».</li>
-      <li>Заповни форму «Додати нове завдання» та натисни кнопку <strong>Додати</strong>.</li>
-      <li>Вибери дату у полі <strong>Дата</strong>.</li>
-      <li>Обери статус: «Заплановано», «В процесі» або «Виконано».</li>
-      <li>Натисни <strong>Видалити</strong> для видалення завдання.</li>
-    </ol>
-  </div>
-</section>
-
+      <!-- Поради -->
+      <div class="hints">
+        <h2>Як користуватися сайтом</h2>
+        <ol>
+          <li>Переглянь список завдань у таблиці «Графік завдань».</li>
+          <li>Заповни форму «Додати нове завдання» та натисни кнопку <strong>Додати</strong>.</li>
+          <li>Вибери дату у полі <strong>Дата</strong>.</li>
+          <li>Обери статус: «Заплановано», «В процесі» або «Виконано».</li>
+          <li>Натисни <strong>Видалити</strong> для видалення завдання.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
 
   <!-- Футер -->
   <footer>
